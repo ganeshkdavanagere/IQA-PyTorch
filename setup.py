@@ -8,7 +8,8 @@ import subprocess
 import time
 
 version_file = 'pyiqa/version.py'
-
+import locale
+locale.getpreferredencoding = lambda: "UTF-8"
 
 def readme():
     with open('README.md', encoding='utf-8') as f:
